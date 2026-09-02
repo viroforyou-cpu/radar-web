@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RADAR-NGO — Inteligencia de casos · falsas denuncias y violencia institucional</title>
+<meta name="description" content="Su caso, ordenado y documentado para su abogado — en sus propias palabras. RADAR-NGO organiza la presentación, detecta contradicciones y prepara la declaración. La evaluación corresponde exclusivamente al profesional del derecho.">
+<link rel="icon" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="%23a32c22" stroke-width="14"/><circle cx="100" cy="100" r="11" fill="%2314110c"/><circle cx="139" cy="61" r="12" fill="%23b39554"/></svg>'>
+<style>
+:root{--ink:#14110c;--ink2:#1d1912;--parch:#f2ecdd;--dim:#c9c0a8;--ox:#a32c22;--oxd:#7e1f18;--gold:#b39554;--goldD:#8a6f3c;
+--serif:Georgia,'Palatino Linotype','Book Antiqua',serif;--mono:ui-monospace,'DejaVu Sans Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--parch);font-family:var(--serif);line-height:1.6}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.045;
+ background:repeating-linear-gradient(0deg,transparent 0 2px,#b39554 2px 3px)}
+header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,var(--oxd),var(--ox));border-bottom:3px double var(--gold);padding:14px 6vw;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+header .k{font-size:.7rem;letter-spacing:.32em;color:var(--parch);opacity:.8}
+nav{margin-left:auto;display:flex;gap:22px;font-size:.87rem;font-variant:small-caps;letter-spacing:.12em}
+nav a{color:var(--parch);text-decoration:none;border-bottom:1px dotted transparent}
+nav a:hover{border-color:var(--gold);color:#fff}
+.wrap{max-width:1080px;margin:0 auto;padding:0 6vw}
+section{padding:76px 0 30px;opacity:0;transform:translateY(14px);animation:rise .7s ease forwards}
+section:nth-of-type(2){animation-delay:.1s}section:nth-of-type(3){animation-delay:.2s}
+section:nth-of-type(4){animation-delay:.3s}section:nth-of-type(5){animation-delay:.35s}
+@keyframes rise{to{opacity:1;transform:none}}
+.secn{font-size:.66rem;letter-spacing:.3em;color:var(--ox);font-weight:700}
+h2{font-size:clamp(1.5rem,3.4vw,2.2rem);font-weight:700;margin:8px 0 10px;letter-spacing:.02em}
+h2 em{color:var(--gold);font-style:italic}
+.rule{height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:14px 0 34px}
+.lead{font-size:1.06rem;color:var(--dim);max-width:46rem}
+/* hero */
+#hero{padding-top:100px;text-align:left}
+.heroLogo{width:min(430px,90%);margin-bottom:26px}
+.cta{display:inline-block;margin-top:30px;background:var(--ox);color:#fff;text-decoration:none;
+ padding:15px 34px;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--gold)}
+.cta:hover{background:var(--oxd)}
+.trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.trust span{font-size:.78rem;letter-spacing:.12em;color:var(--gold);border:1px solid var(--goldD);padding:5px 13px;font-variant:small-caps}
+/* pasos */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1px;background:var(--goldD);border:1px solid var(--goldD);margin-top:8px}
+.step{background:var(--ink2);padding:26px 22px}
+.step b{font-family:var(--mono);color:var(--gold);font-size:.8rem;display:block;margin-bottom:8px}
+.step h3{font-size:1rem;margin-bottom:6px}
+.step p{font-size:.86rem;color:var(--dim)}
+/* abogados */
+.deliv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:26px 0 40px}
+.d{background:var(--ink2);border:1px solid #3a3222;border-top:3px solid var(--gold);padding:18px 20px}
+.d h4{font-size:.95rem;color:#fff;margin-bottom:6px}
+.d p{font-size:.82rem;color:var(--dim)}
+.precios{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1px;background:var(--goldD);border:1px solid var(--goldD)}
+.p{background:var(--ink2);padding:22px;text-align:center}
+.p .t{font-size:.66rem;letter-spacing:.18em;color:var(--gold);font-variant:small-caps}
+.p .v{font-size:1.5rem;color:#fff;margin:8px 0 2px;font-family:var(--serif)}
+.p .d2{font-size:.72rem;color:var(--dim);font-style:italic}
+.pnote{font-size:.72rem;color:var(--dim);margin-top:12px;font-style:italic}
+/* transparencia */
+.noList{list-style:none;max-width:44rem;margin-top:10px}
+.noList li{padding:10px 0;border-bottom:1px solid #3a3222;font-size:.92rem}
+.noList b{color:var(--ox);letter-spacing:.06em}
+.disclaimer{border:1px solid var(--goldD);background:#191510;padding:18px 22px;margin-top:28px;font-size:.85rem;color:var(--dim);font-style:italic}
+/* contacto */
+#contacto .box{background:var(--ink2);border:1px solid var(--goldD);padding:40px 6vw;text-align:center}
+#contacto .mail{font-size:1.15rem;color:var(--gold);font-family:var(--mono);text-decoration:none;border-bottom:1px dotted var(--gold)}
+footer{margin-top:80px;border-top:1px solid #3a3222;padding:34px 6vw 60px;display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+footer .dv{width:200px;opacity:.9}
+footer p{font-size:.74rem;color:var(--dim);max-width:34rem}
+footer .k2{font-size:.62rem;letter-spacing:.24em;color:var(--gold);font-variant:small-caps;display:block;margin-bottom:6px}
+</style></head><body>
+<header>
+  <span class="k">SISTEMA DE INTELIGENCIA DE CASOS</span>
+  <nav><a href="#como">Cómo funciona</a><a href="#abogados">Para abogados</a><a href="#transparencia">Transparencia</a><a href="#contacto">Solicitar la prueba</a></nav>
+</header>
+
+<div class="wrap">
+<section id="hero">
+  <svg class="heroLogo" viewBox="0 0 560 140" xmlns="http://www.w3.org/2000/svg" aria-label="RADAR-NGO">
+    <g transform="translate(14,20) scale(0.5)">
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#a32c22" stroke-width="12"/>
+      <path d="M100,100 L156.6,43.4 A80,80 0 0 1 180,100 Z" fill="#b39554" opacity="0.28"/>
+      <line x1="100" y1="100" x2="180" y2="100" stroke="#b39554" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="100" cy="100" r="11" fill="#14110c"/><circle cx="139" cy="61" r="9" fill="#b39554"/>
+    </g>
+    <text x="135" y="72" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="2" fill="#f2ecdd">RADAR<tspan fill="#e2a49b">-NGO</tspan></text>
+    <text x="137" y="102" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="5.5" fill="#c9c0a8">INTELIGENCIA DE CASOS</text>
+  </svg>
+  <h2>Su caso, ordenado y documentado para su abogado — <em>en sus propias palabras.</em></h2>
+  <div class="rule"></div>
+  <p class="lead">Usted presenta su versión de los hechos con un documento, en una sola presentación.
+  El sistema la organiza, detecta contradicciones y vacíos, genera las preguntas correctas y prepara
+  su declaración. Su caso queda abierto 150 días para agregar lo que recuerde. La evaluación de las
+  pruebas corresponde exclusivamente a los abogados.</p>
+  <a class="cta" href="#contacto">Solicitar la prueba</a>
+  <div class="trust"><span>IA transparente</span><span>Confidencial</span><span>El abogado evalúa</span><span>150 días por caso</span></div>
+</section>
+
+<section id="como">
+  <span class="secn">I.</span>
+  <h2>Cómo funciona — <em>cuatro pasos, cero jerga</em></h2>
+  <div class="rule"></div>
+  <div class="steps">
+    <div class="step"><b>PASO 1</b><h3>Recibe su enlace</h3><p>Por email, un enlace personal con un código que mantiene su información privada y separada de cualquier otro caso.</p></div>
+    <div class="step"><b>PASO 2</b><h3>Acepta y presenta</h3><p>Consentimiento claro primero. Después el formulario: UN documento con SU versión de los hechos — sus palabras, con las acusaciones y las controversias.</p></div>
+    <div class="step"><b>PASO 3</b><h3>El sistema trabaja</h3><p>Su presentación se organiza en hechos, fechas y líneas; las contradicciones se marcan; nada se inventa y la evidencia no se evalúa aquí.</p></div>
+    <div class="step"><b>PASO 4</b><h3>Preguntas y ensayo</h3><p>Recibe preguntas — nunca repetidas — para completar lo que falte. Y puede ensayar su declaración con las preguntas difíciles, antes de la audiencia.</p></div>
+  </div>
+</section>
+
+<section id="abogados">
+  <span class="secn">II.</span>
+  <h2>Para abogados y estudios — <em>un documento, no una caja de expediente</em></h2>
+  <div class="rule"></div>
+  <div class="deliv">
+    <div class="d"><h4>Evaluación legal ordenada</h4><p>Hechos por línea (documentado / relato), responsables, contradicciones, posibles encuadres a confirmar, prueba disponible y lo que falta probar.</p></div>
+    <div class="d"><h4>Manifest de evidencia faltante</h4><p>Todo lo declarado sin documentar y las fechas pendientes — listo para pedir al expediente.</p></div>
+    <div class="d"><h4>Simulacro de declaración</h4><p>Hoja de práctica generada del propio registro del caso: contradicciones, fechas y relatos sin documento. Herramienta de preparación — nunca predicción ni estrategia.</p></div>
+    <div class="d"><h4>Ventana de 150 días</h4><p>El caso vive: nuevas presentaciones re-abren el análisis y generan nuevas preguntas. Cerrado solo cuando el cliente lo decide.</p></div>
+  </div>
+  <div class="d" style="border-top-color:var(--ox)">
+    <h4>El tiempo que devuelve</h4>
+    <p>Cada caso llega ordenado, fechado, con sus contradicciones marcadas y el material faltante
+    listado: horas de lectura y organización que el profesional ya no paga. Los aranceles se
+    acuerdan por caso, en la consulta — sin listas públicas.</p>
+  </div>
+</section>
+
+<section id="transparencia">
+  <span class="secn">III.</span>
+  <h2>Transparencia — <em>lo que NO hacemos, por escrito</em></h2>
+  <div class="rule"></div>
+  <ul class="noList">
+    <li><b>NO somos un estudio jurídico.</b> RADAR-NGO es un asistente de inteligencia artificial sin matrícula profesional.</li>
+    <li><b>NO emitimos opinión jurídica.</b> Todo documento generado requiere revisión de un profesional del derecho matriculado.</li>
+    <li><b>NO evaluamos pruebas.</b> La evidencia se registra como lista, tal como llega. Su valoración corresponde exclusivamente al abogado.</li>
+    <li><b>NO inventamos datos.</b> Lo que no está probado queda como pregunta abierta — nunca como suposición.</li>
+    <li><b>NO enviémos nada sin usted.</b> El sistema prepara los textos; cada envío sale de la mano del operador.</li>
+  </ul>
+  <div class="disclaimer">RADAR-NGO es un asistente de inteligencia artificial generativa desarrollado por DerechosVivos-NGO.
+  No es un estudio jurídico ni una persona física; no posee matrícula profesional. Los documentos que genera no constituyen
+  opinión jurídica ni asesoramiento legal y requieren revisión de un profesional matriculado antes de cualquier acción.</div>
+</section>
+
+<section id="contacto">
+  <span class="secn">IV.</span>
+  <h2>Solicitar la prueba — <em>empieza con un email</em></h2>
+  <div class="rule"></div>
+  <div class="box">
+    <p class="lead" style="margin:0 auto 18px">Escríbanos contando, en dos líneas, su situación. Recibirá su enlace personal
+    con el procedimiento completo y la ventana de 150 días.</p>
+    <a class="mail" href="mailto:bombones801@gmail.com?subject=Quiero%20realizar%20la%20prueba%20RADAR-NGO">bombones801@gmail.com</a>
+    <p class="pnote" style="margin-top:16px">Respuesta dentro de las 24 horas · confidencial desde el primer mensaje</p>
+  </div>
+</section>
+</div>
+
+<footer>
+  <svg class="dv" viewBox="0 0 560 140" xmlns="http://www.w3.org/2000/svg" aria-label="DerechosVivos">
+    <g transform="translate(14,20) scale(0.5)">
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#3f6b34" stroke-width="12"/>
+      <polyline points="28,100 68,100 80,74 96,128 110,100 172,100" fill="none" stroke="#b39554" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="135" y="72" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" letter-spacing="1" fill="#f2ecdd">Derechos<tspan fill="#7ea877">Vivos</tspan></text>
+    <text x="137" y="102" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="5.5" fill="#c9c0a8">DERECHOS HUMANOS · DIGNIDAD · VIDA</text>
+  </svg>
+  <p><span class="k2">Un programa de</span>Un programa de DerechosVivos-NGO · República Argentina.
+  Sistema de inteligencia de casos para falsas denuncias y violencia institucional. Sus datos se procesan
+  localmente, con total confidencialidad.</p>
+</footer>
+</body></html>
