@@ -63,6 +63,7 @@ h2 em{color:var(--gold);font-style:italic}
 #contacto .mail{font-size:1.15rem;color:var(--gold);font-family:var(--mono);text-decoration:none;border-bottom:1px dotted var(--gold)}
 .channels{display:flex;flex-direction:column;gap:12px;align-items:center}
 .channels .wa{color:#fff;background:var(--ox);border-bottom:1px solid var(--gold);padding:13px 22px}
+.channels .off{pointer-events:none;opacity:.4;filter:grayscale(.7)}
 footer{margin-top:80px;border-top:1px solid #3a3222;padding:34px 6vw 60px;display:flex;gap:26px;align-items:center;flex-wrap:wrap}
 footer .dv{width:200px;opacity:.9}
 footer p{font-size:.74rem;color:var(--dim);max-width:34rem}
@@ -167,10 +168,10 @@ footer .k2{font-size:.62rem;letter-spacing:.24em;color:var(--gold);font-variant:
     <p class="lead" style="margin:0 auto 18px">Escríbanos contando, en dos líneas, su situación. Recibirá su enlace personal
     con el procedimiento completo y la ventana de 150 días.</p>
     <div class="channels">
-      <a class="mail wa" href="https://wa.me/5491138564740?text=Quiero%20realizar%20la%20prueba%20RADAR-NGO">WhatsApp · +54 9 1138564740</a>
-      <a class="mail" href="mailto:bombones801@gmail.com?subject=Quiero%20realizar%20la%20prueba%20RADAR-NGO">bombones801@gmail.com</a>
+      <a class="mail wa off" aria-disabled="true" tabindex="-1" href="https://wa.me/5491138564740?text=Quiero%20realizar%20la%20prueba%20RADAR-NGO">WhatsApp · +54 9 1138564740</a>
+      <a class="mail off" aria-disabled="true" tabindex="-1" href="mailto:bombones801@gmail.com?subject=Quiero%20realizar%20la%20prueba%20RADAR-NGO">bombones801@gmail.com</a>
     </div>
-    <p class="pnote" style="margin-top:16px">Respuesta dentro de las 24 horas · confidencial desde el primer mensaje</p>
+    <p class="pnote" style="margin-top:16px">Los canales de contacto se habilitan próximamente · confidencial desde el primer mensaje</p>
   </div>
 </section>
 </div>
